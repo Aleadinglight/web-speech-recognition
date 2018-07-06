@@ -23,7 +23,7 @@ var app = new Vue({
 });
 
 recognition.onresult = function(event) {
-    app.message = "received.";
+    app.message = event.results[0][0].transcript;
 }
 
 recognition.onspeechend = function() {
