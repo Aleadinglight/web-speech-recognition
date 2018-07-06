@@ -12,21 +12,21 @@ recognition.maxAlternatives = 1;
 var app = new Vue({
     el: '#app',
     data: {
-        message:"Hello",
+        message:"WELCOME",
     },
     methods: {
         startRecording: function (){
             recognition.start();
-            this.message = "Recording";
+            this.message = "RECORDING..";
         }
     }
 });
 
 recognition.onresult = function(event) {
-    app.message = event.results[0][0].transcript;
+    app.message = event.results[0][0].transcript.toUpperCase();
 }
 
 recognition.onspeechend = function() {
-    app.message = "stop.";
+    app.message = "RECORDING STOPPED.";
     recognition.stop();
 }
