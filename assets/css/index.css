@@ -17,11 +17,11 @@ html, body {
     border-color: transparent;
 }
 .container-fluid{
-    height:70vh;
+    height:80vh;
     background-color: #3B5998;
 }
 .bottom{
-    height: 20vh;
+    height: 10vh;
     background-color: #293E6A!important;
 }
 .navbar{
@@ -30,6 +30,7 @@ html, body {
 }
 
 .button{
+    
     background-color: #F04C40;
     border: none;
     color: white;
@@ -52,4 +53,5 @@ html, body {
 .button:active{
     background-color: #ff0000;
     cursor: pointer;
+    outline:none;
 }
