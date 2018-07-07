@@ -1,9 +1,16 @@
 html, body {
     background-color: #3B5998;
+    color: #ffffff;
 }
 
 navbar {
     margin-bottom: 0;
     background-color: #3B5998;
     font-family: Montserrat, sans-serif;
+    color: #ffffff;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #3B5998 !important;
+    background-color: #fff !important;
 }
