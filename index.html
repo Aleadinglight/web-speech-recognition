@@ -16,27 +16,29 @@
   <nav class="navbar navbar-expand-sm ">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">About me</a>
+        <a class="nav-link" href="#"><b>About me</b></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#"><b>Contact</b></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Github</a>
+        <a class="nav-link" href="#"><b>Github</b></a>
       </li>
     </ul>  
   </nav>
 
-  <div class="container">
+  <div class="container-fluid">
     
 
     <h1>Web Speech Recognition</h1>
     <div id="app">
       <p>{{ message }}</p>
-      <button v-on:click="startRecording">START</button>
+      <button class="button" v-on:click="startRecording">START</button>
     </div>
         
   </div> 
+  <div class="bottom">
+  </div>
   <script src="assets/js/index.js"></script>
 
 </body>
