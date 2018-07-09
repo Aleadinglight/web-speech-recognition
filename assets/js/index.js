@@ -12,7 +12,8 @@ recognition.maxAlternatives = 1;
 var result = new Vue({
     el:'#result',
     data: {
-        message:"Nothing here"
+        resultMessage:"",
+        show:false
     }
 });
 
@@ -23,6 +24,9 @@ var app = new Vue({
     },
     methods: {
         startRecording: function (){
+            if (result.show){
+                result.show=false;
+            }
             recognition.start();
             this.message = "RECORDING..";
         }
@@ -30,8 +34,8 @@ var app = new Vue({
 });
 
 recognition.onresult = function(event) {
-    app.message = event.results[0][0].transcript.toUpperCase();
-    result.message = event.results[0][0].transcript.toUpperCase();
+    result.resultMessage = event.results[0][0].transcript.toUpperCase();
+    result.show=true;
 }
 
 recognition.onspeechend = function() {
