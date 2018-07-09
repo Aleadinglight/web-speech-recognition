@@ -8,7 +8,7 @@ var speechRecognitionList = new SpeechGrammarList();
 recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
-
+// if transition is inside result, when result toggle there will be no animation
 var result = new Vue({
     el:'#result',
     data: {

@@ -7,7 +7,8 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -39,14 +40,14 @@
     </div>
     <div class="row">
       <div class="col-sm-4"></div>
-      <div class="col-sm-4 d-flex align-items-center">
-        <transition name="custom-classes-transition" enter-active-class="animated bounceInUp">
-          <div id="result" class="result" v-if="show">{{ resultMessage }}</div>
+      <div class="col-sm-4 d-flex align-items-center" id="result">
+        <transition name="custom-classes-transition" enter-active-class="animated bounceInUp" leave-active-class="animated bounceOutRight">
+          <div  class="result" v-if="show">{{ resultMessage }}</div>
         </transition>
       </div>
       <div id="app" class="col-sm-4"> 
         <p>{{ message }}</p>
-        <button class="button" v-on:click="startRecording"><i class="fa fa-microphone"></i></button>
+        <button class="button" v-on:click="startRecording" ><i class="fa fa-microphone"></i></button>
       </div>
     </div>   
     <div class="mountain">
