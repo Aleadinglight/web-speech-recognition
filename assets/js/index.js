@@ -9,6 +9,13 @@ recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
+var result = new Vue({
+    el:'#result',
+    data: {
+        message:"Nothing here"
+    }
+});
+
 var app = new Vue({
     el: '#app',
     data: {
@@ -24,6 +31,7 @@ var app = new Vue({
 
 recognition.onresult = function(event) {
     app.message = event.results[0][0].transcript.toUpperCase();
+    result.message = event.results[0][0].transcript.toUpperCase();
 }
 
 recognition.onspeechend = function() {

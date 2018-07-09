@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/index.css">
 
 </head>
@@ -38,7 +38,7 @@
     </div>
     <div class="row">
       <div class="col-sm-4"></div>
-      <div class="col-sm-4"></div>
+      <div id="result" class="col-sm-4"><textarea>{{ message }}</textarea></div>
       <div id="app" class="col-sm-4">
         <p>{{ message }}</p>
         <button class="button" v-on:click="startRecording"><i class="fa fa-microphone"></i></button>
@@ -50,21 +50,21 @@
           <div class="mountain-cap-2"></div>
           <div class="mountain-cap-3"></div>
         </div>
+    </div>
+    <div class="mountain-two">
+      <div class="mountain-top">
+        <div class="mountain-cap-1"></div>
+        <div class="mountain-cap-2"></div>
+        <div class="mountain-cap-3"></div>
       </div>
-      <div class="mountain-two">
-        <div class="mountain-top">
-          <div class="mountain-cap-1"></div>
-          <div class="mountain-cap-2"></div>
-          <div class="mountain-cap-3"></div>
-        </div>
+    </div>
+    <div class="mountain-three">
+      <div class="mountain-top">
+        <div class="mountain-cap-1"></div>
+        <div class="mountain-cap-2"></div>
+        <div class="mountain-cap-3"></div>
       </div>
-        <div class="mountain-three">
-        <div class="mountain-top">
-          <div class="mountain-cap-1"></div>
-          <div class="mountain-cap-2"></div>
-          <div class="mountain-cap-3"></div>
-        </div>
-      </div>
+    </div>
   </div> 
   <script src="assets/js/index.js"></script>
 
