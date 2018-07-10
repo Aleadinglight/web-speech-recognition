@@ -4,6 +4,7 @@ html, body {
 }
 .navbar li a { 
     color: #e5e5e5 !important;
+    font-size:18px;
 }
 .navbar li a:hover { 
     color: #ffffff !important;
