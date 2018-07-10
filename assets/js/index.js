@@ -21,9 +21,11 @@ var app = new Vue({
     el: '#app',
     data: {
         message:"WELCOME",
+        isDisabled:false
     },
     methods: {
         startRecording: function (){
+            this.isDisabled=true;
             if (result.show){
                 result.show=false;
             }
@@ -40,5 +42,6 @@ recognition.onresult = function(event) {
 
 recognition.onspeechend = function() {
     app.message = "RECORDING STOPPED.";
+    app.isDisabled = false;
     recognition.stop();
 }

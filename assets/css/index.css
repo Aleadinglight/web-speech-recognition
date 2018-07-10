@@ -3,12 +3,10 @@ html, body {
     font-family: 'Varela Round', sans-serif;
 }
 .navbar li a { 
-    color: #ffffff !important;
-
+    color: #e5e5e5 !important;
 }
-.navbar li a:hover {
-    color: #3B5998 !important;
-    background-color: #ffffff;
+.navbar li a:hover { 
+    color: #ffffff !important;
 }
 
 .navbar-default .navbar-toggle {
@@ -25,6 +23,8 @@ html, body {
 .navbar{
     height:10vh;
     background-color: #3B5998;
+    padding:0;
+    padding-left: 10px;
 }
 .rowh1{
     height:15vh;
