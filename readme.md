@@ -9,6 +9,10 @@ To website: https://aleadinglight.github.io/web-speech-recognition/
 - Vue.js 2.0
 - Jekyll
 
+## Desmontration 
+
+A live desmontration of the website can be found [here](https://github.com/Aleadinglight/web-speech-recognition/blob/master/assets/video/webspeech.mp4).
+
 ## Locally run:
 
 You can run this website locally following these steps. The website must be running with `https` trusted certificate (meaning that you should put it in `var/www/html` to have it run properly if you dont have one).
