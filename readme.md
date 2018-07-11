@@ -11,7 +11,7 @@ To website: https://aleadinglight.github.io/web-speech-recognition/
 
 ## Desmontration 
 
-A live desmontration of the website can be found [here](https://github.com/Aleadinglight/web-speech-recognition/blob/master/assets/video/webspeech.mp4).
+A live desmontration of the website can be found [here](https://drive.google.com/file/d/1622aWcPv6B6-zQ8JOIU0dY1ELXzgviK5/view?usp=sharing).
 
 ## Locally run:
 
