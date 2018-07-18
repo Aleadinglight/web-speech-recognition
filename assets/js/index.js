@@ -8,6 +8,12 @@ var speechRecognitionList = new SpeechGrammarList();
 recognition.lang = 'en-US';
 recognition.interimResults = false;
 recognition.maxAlternatives = 1;
+
+if (SpeechRecognition==null){
+    result.resultMessage="Sorry, this feature is not currently supporting your browser. Please upgrade it to Chrome 33+.";
+    app.isDisabled=true;
+    result.show=true;
+}
 // if transition is inside result, when result toggle there will be no animation
 var result = new Vue({
     el:'#result',
@@ -29,7 +35,14 @@ var app = new Vue({
             if (result.show){
                 result.show=false;
             }
-            recognition.start();
+            try {
+                recognition.start();
+            }
+            catch(err) {
+                result.resultMessage="Sorry, this feature is not currently supporting your browser. Please upgrade it to Chrome 33+.";
+                app.isDisabled=true;
+                result.show=true;
+            }
             this.message = "RECORDING..";
         }
     }
